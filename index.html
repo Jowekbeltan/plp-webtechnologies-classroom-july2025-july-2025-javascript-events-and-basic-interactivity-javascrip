@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎉 My Interactive Web Page</h1>
+
+  <!-- Part 1: Event Handling Demo -->
+  <section>
+    <h2>Event Handling</h2>
+    <button id="clickMeBtn">Click Me!</button>
+    <p id="message"></p>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section>
+    <h2>Interactive Elements</h2>
+
+    <!-- Light/Dark Mode Toggle -->
+    <button id="toggleTheme">Toggle Light/Dark Mode</button>
+
+    <!-- Counter Game -->
+    <div>
+      <button id="counterBtn">Increase Counter</button>
+      <span id="counterValue">0</span>
+    </div>
+
+    <!-- FAQ Collapsible -->
+    <div class="faq">
+      <h3 class="faq-question">What is JavaScript?</h3>
+      <p class="faq-answer">JavaScript is the language of the web used to make pages interactive.</p>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>Sign Up Form</h2>
+    <form id="signupForm" novalidate>
+      <label>Name: <input type="text" id="name"></label>
+      <span class="error" id="nameError"></span><br>
+
+      <label>Email: <input type="email" id="email"></label>
+      <span class="error" id="emailError"></span><br>
+
+      <label>Password: <input type="password" id="password"></label>
+      <span class="error" id="passwordError"></span><br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formSuccess"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
